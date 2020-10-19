@@ -4,7 +4,7 @@ import { LeafletMouseEvent } from 'leaflet'
 import { useHistory } from "react-router-dom";
 
 import { FiPlus } from "react-icons/fi";
-import mapIcon from "../utils/mapicon";
+import mapIcon from "../utils/mapIcon";
 
 import '../styles/pages/create-orphanage.css';
 import SideBar from '../components/SideBar';
