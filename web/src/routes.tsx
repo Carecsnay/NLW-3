@@ -9,14 +9,16 @@ import CreateOrphanage from './pages/CreateOrphanage';
 function Routes() {
     return (
         <BrowserRouter>
-            <Switch >
+            <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/app" component={OrphanagesMap} />
                 
                 <Route path="/orphanages/create" component={CreateOrphanage} />
                 <Route path="/orphanages/:id" component={Orphanage} />
+
             </Switch>
         </BrowserRouter>
+        
     );
 }
 

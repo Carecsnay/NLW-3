@@ -1,38 +1,39 @@
 import React from 'react';
-import { Feather } from '@expo/vector-icons'
 import { View, StyleSheet, Text } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler'; //botão que faz uma bolinha quando clica em cima, botoes customizados para SOs
+import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native';
 
 interface HeaderProps {
-    showCancel?: boolean; //? => não obrigatório
     title: string;
+    showCancel?: boolean; //? => não obrigatório
 }
+
 export default function Header({ title, showCancel = true }: HeaderProps) {
     const navigation = useNavigation();
 
-    function handleGoBackToAppHomepage(){
-        navigation.navigate('OrphanageMap') //tela inicial
+    function handleGoBackToAppHomePage() {
+        navigation.navigate('OrphanagesMap'); //tela inicial
     }
 
     return (
         <View style={styles.container}>
             <BorderlessButton onPress={navigation.goBack}>                          {/* Função Voltar para tela anterior  da biblioteca navigation*/}
-                <Feather name="arrow-left" size={24} color='#15b6d6' />             {/*botão de voltar*/}
+                <Feather name='arrow-left' size={24} color='#15b6d6' />             {/*botão de voltar*/}
             </BorderlessButton>
 
-            <Text style={styles.title}>[title]</Text>
+            <Text style={styles.title}>{title}</Text>
 
             { showCancel ? (
-            <BorderlessButton onPress={handleGoBackToAppHomepage}> 
-                <Feather name="x" size={24} color='#ff69d' />                       {/*botão de fechar fazendo if  a View serve para oculpar o espeço em branco e deixar o nome alinhado no centro , por isso nao pode ser NULL no ELSE */}
-            </BorderlessButton>
+                <BorderlessButton onPress={handleGoBackToAppHomePage}>
+                    <Feather name='x' size={24} color='#ff669d' />                       {/*botão de fechar fazendo if  a View serve para oculpar o espeço em branco e deixar o nome alinhado no centro , por isso nao pode ser NULL no ELSE */}
+                </BorderlessButton>
             ) : (
-               <View /> 
-            ) }
+                    <View />
+                )};
         </View>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -44,7 +45,8 @@ const styles = StyleSheet.create({
 
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: 'center'
+
     },
 
     title: {

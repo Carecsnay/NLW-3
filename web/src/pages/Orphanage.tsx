@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 //import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
-import { useParams } from "react-router-dom"; //pegar o id do url
+import { useParams } from 'react-router-dom'; //pegar o id do url
 
-import Sidebar from "../components/Sidebars";
-import mapIcon from "../utils/mapicon";
-import api from "../services/api";
+import Sidebar from '../components/SideBar';
 
 import '../styles/pages/orphanage.css';
+import mapIcon from '../utils/mapIcon';
+import api from '../services/api';
 
 interface Orphanage {
   latitude: number;
@@ -70,13 +70,11 @@ export default function Orphanage() {
 
           <div className="orphanage-details-content">
             <h1>{orphanage.name}</h1>
-            <p>
-              {orphanage.about}
-            </p>
+            <p>{orphanage.about}</p>
 
             <div className="map-container">
               <Map
-                center={[orphanage.latitude, orphanage.longitude]}
+                center={[orphanage.latitude,orphanage.longitude]}
                 zoom={16}
                 style={{ width: '100%', height: 280 }}
                 dragging={false}
@@ -88,19 +86,17 @@ export default function Orphanage() {
                 <TileLayer
                   url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
-                <Marker interactive={false} icon={mapIcon} position={[orphanage.latitude, orphanage.longitude]} />
+                <Marker interactive={false} icon={mapIcon} position={[orphanage.latitude,orphanage.longitude]} />
               </Map>
 
               <footer>
-                <a target="_blank" rel="noopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${[orphanage.latitude]}, ${[orphanage.longitude]}`}>Ver rotas no Google Maps</a>
+                <a target="_blank" rel="noopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${[orphanage.latitude]},${[orphanage.longitude]}`}>Ver rotas no Google Maps</a>
               </footer>
             </div>
             <hr />
 
             <h2>Instruções para visita</h2>
-            <p>
-              {orphanage.instructions}
-            </p>
+            <p>{orphanage.instructions}</p>
 
             <div className="open-details">
               <div className="hour">
@@ -108,7 +104,7 @@ export default function Orphanage() {
                 Segunda à Sexta <br />
                 {orphanage.opening_hours}
               </div>
-              {orphanage.open_on_weekends ? (
+              { orphanage.open_on_weekends ? (
                 <div className="open-on-weekends">
                   <FiInfo size={32} color="#39CC83" />
                   Atendemos <br />

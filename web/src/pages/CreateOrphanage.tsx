@@ -1,13 +1,14 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { FormEvent, useState, ChangeEvent } from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import { LeafletMouseEvent } from "leaflet";
-import { FiPlus } from "react-icons/fi";
+import { LeafletMouseEvent } from 'leaflet'
 import { useHistory } from "react-router-dom";
 
-import Sidebar from "../components/Sidebars";
+import { FiPlus } from "react-icons/fi";
 import mapIcon from "../utils/mapicon";
+
 import '../styles/pages/create-orphanage.css';
-import api from "../services/api";
+import SideBar from '../components/SideBar';
+import api from '../services/api';
 
 
 
@@ -25,7 +26,6 @@ export default function CreateOrphanage() {
   const [previewImages, setPreviewImages] = useState<string[]>([]);
 
   function handleMapClick(event: LeafletMouseEvent) {
-
     const { lat, lng } = event.latlng;
 
     setPosition({
@@ -34,16 +34,19 @@ export default function CreateOrphanage() {
     });
   }
 
-  function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
+  function handleSelectImage(event: ChangeEvent<HTMLInputElement>) {
     if (!event.target.files) {
       return;
     }
+
     const selectedImages = Array.from(event.target.files)
+
     setImages(selectedImages);
 
     const selectedImagesPreview = selectedImages.map(image => {
       return URL.createObjectURL(image);
     });
+
     setPreviewImages(selectedImagesPreview);
   }
 
@@ -53,6 +56,7 @@ export default function CreateOrphanage() {
     const { latitude, longitude } = position; //desestruturando position
 
     const data = new FormData();
+
     data.append('name', name);
     data.append('about', about);
     data.append('latitude', String(latitude));
@@ -72,10 +76,10 @@ export default function CreateOrphanage() {
     history.push('/app');
   }
 
-
   return (
     <div id="page-create-orphanage">
-      <Sidebar />
+
+      <SideBar />
 
       <main>
         <form onSubmit={handleSubmit} className="create-orphanage-form">
@@ -102,6 +106,7 @@ export default function CreateOrphanage() {
                   ]}
                 />
               )}
+
             </Map>
 
             <div className="input-block">
@@ -111,6 +116,7 @@ export default function CreateOrphanage() {
                 value={name}
                 onChange={event => setName(event.target.value)}
               />
+
             </div>
 
             <div className="input-block">
@@ -136,9 +142,18 @@ export default function CreateOrphanage() {
                 <label htmlFor="image[]" className="new-image">
                   <FiPlus size={24} color="#15b6d6" />
                 </label>
+
+
               </div>
 
-              <input multiple onChange={handleSelectImages} type="file" id="image[]" />
+              <input
+                multiple
+                onChange={handleSelectImage}
+                type="file"
+                id="image[]"
+              />
+
+
             </div>
           </fieldset>
 
@@ -156,7 +171,7 @@ export default function CreateOrphanage() {
 
             <div className="input-block">
               <label htmlFor="opening_hours">Horário de funcionamento</label>
-              <input 
+              <input
                 id="opening_hours"
                 value={opening_hours}
                 onChange={event => setOpeningHours(event.target.value)}
@@ -169,11 +184,12 @@ export default function CreateOrphanage() {
               <div className="button-select">
                 <button
                   type="button"
-                  className={open_on_weekends  ? 'active' : ''}
+                  className={open_on_weekends ? 'active' : ''}
                   onClick={() => setOpenOnWeekends(true)}
                 >
                   Sim
-                  </button>
+                </button>
+
                 <button
                   type="button"
                   className={!open_on_weekends ? 'active' : ''}

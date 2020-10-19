@@ -31,10 +31,11 @@ aside.app-sidebar {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 50px;
   }
   
   aside.app-sidebar footer a:hover,
   aside.app-sidebar footer button:hover {
     background: #17D6EB;
   }
-  
