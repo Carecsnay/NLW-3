@@ -171,7 +171,7 @@ Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Car
 
 ## ✉ Entre em contato
 
-[Gmail](mailto:carecsnay1@gmail.com?subject=[GitHub] Olá)
+[email @jbenet directly](mailto:juan@ipfs.io?subject=Contributing%20to%20Multiformats).
 
 <br />
 
