@@ -1,3 +1,1 @@
-## ✉ Entre em contato
-
-[Gmail](mailto:carecsnay1@gmail.com?Subject=Contact&Body=Ol%E1%20Bruno%2C%20%0A)
+Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Carecsnay/NLW-3/blob/master/LICENSE) para mais informações.
