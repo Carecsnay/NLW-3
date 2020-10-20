@@ -46,7 +46,7 @@ Este projeto foi desenvolvido usando Node.js, ReactJS e React Native, durante a 
 
 ## 🎨 Layout
 
-Os layouts da aplicação estão disponíveis no Figma: [Web](http://figma.com/file/X5vjP69Y0H9C8aa5QqorzH/Happy-Web), [Mobile](https://www.figma.com/file/5lunlSxDHchxU312BJntQL/Happy-Mobile).
+Os layouts da aplicação estão disponíveis no Figma: [Web](https://www.figma.com/file/D0yurFQoSbWkq7pqd4gmhX/Happy-Web), [Mobile](https://www.figma.com/file/GvxrjBhdyeJMOrCmH9ZbCQ/Happy-Mobile).
 
 <br />
 
@@ -67,9 +67,6 @@ Os layouts da aplicação estão disponíveis no Figma: [Web](http://figma.com/f
 
 ### Ambiente de desenvolvimento
 - [VS Code](https://code.visualstudio.com/)
-- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://prettier.io/)
 
 <br />
 
@@ -82,7 +79,7 @@ Para clonar esse repositório pelo terminal, é necessário possuir o [Git](http
 $ git clone https://github.com/Carecsnay/NLW-3.git
 
 # Entre na pasta do projeto
-$ cd happy
+$ cd NLW-3
 ```
 
 <br />
@@ -105,7 +102,7 @@ cd backend && yarn
 $ yarn typeorm migration:run
 
 # Execute a api em Node.js
-$ yarn dev:server
+$ yarn dev
 
 # Instale as dependências do front-end web
 $ cd ../web && yarn
@@ -127,7 +124,7 @@ $ cd backend && npm install
 $ npm run typeorm migration:run
 
 # Execute a api em Node.js
-$ npm run dev:server
+$ npm run dev
 
 # Instale as dependências do front-end web
 $ cd ../web && npm install
@@ -174,4 +171,4 @@ Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Car
 
 ---
 
-Desenvolvido por **Bruno Benício** 
+Desenvolvido por **Bruno Benicio** 
