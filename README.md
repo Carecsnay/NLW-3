@@ -35,10 +35,10 @@
     />
   </a>
 
-  <a href="https://github.com/Bonizario/happy/blob/master/LICENSE">
+  <a href="https://github.com/Carecsnay/NLW-3/blob/master/LICENSE">
     <img
       alt="License"
-      src="https://img.shields.io/github/license/bonizario/happy?color=FFD666"
+      src="https://img.shields.io/github/license/Carecsnay/NLW-3?color=FFD666"
     />
   </a>
 </p>
