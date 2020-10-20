@@ -166,11 +166,9 @@ Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Car
 
 <br />
 
-## Desenvolvido por **Bruno Benicio** 
+## 📮 Entre em contato
 
-<p>
-<a href="mailto:carecsnay1@gmail.com?Subject=Contact&Body=Ol%E1%20Bruno%2C%20%0A">
-Mail</ a>
-</ p>
+
+✉ -> (mailto:carecsnay1@gmail.com?Subject=Contact&Body=Ol%E1%20Bruno%2C%20%0A)
 
 <br />
