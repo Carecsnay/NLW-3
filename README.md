@@ -171,7 +171,7 @@ Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Car
 
 ## ✉ Entre em contato
 
-[email](carecsnay1@gmail.com).
+mail: carecsnay1@gmail.com
 
 <br />
 
