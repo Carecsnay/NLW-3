@@ -21,6 +21,13 @@
     />
   </a>
 
+  <!-- <a href="https://www.linkedin.com/in/gabriel-bonizario/">
+    <img
+      alt="Linkedin"
+      src="https://img.shields.io/badge/Linkedin-gabriel--bonizario-29B6D1?style=flat-square&logo=Linkedin&logoColor=white"
+    />
+  </a> -->
+
   <a href="https://github.com/Carecsnay/NLW-3/commits/master">
     <img
       alt="GitHub last commit"
