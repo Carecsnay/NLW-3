@@ -9,28 +9,28 @@
 <p align="center">
   <a href="https://github.com/Carecsnay/NLW-3">
     <img
-      alt="GitHub Linguagens Utilizadas"
+      alt="GitHub language count"
       src="https://img.shields.io/github/languages/count/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/">
     <img
-      alt="Tamanho do Repositório"
+      alt="Repository size"
       src="https://img.shields.io/github/repo-size/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/commits/master">
     <img
-      alt="Último Commit"
+      alt="GitHub last commit"
       src="https://img.shields.io/github/last-commit/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/blob/master/LICENSE">
     <img
-      alt="Licença"
+      alt="License"
       src="https://img.shields.io/github/license/Carecsnay/NLW-3?color=FFD666"
     />
   </a>
