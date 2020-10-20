@@ -9,28 +9,28 @@
 <p align="center">
   <a href="https://github.com/Carecsnay/NLW-3">
     <img
-      alt="GitHub language count"
+      alt="GitHub Linguagens Utilizadas"
       src="https://img.shields.io/github/languages/count/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/">
     <img
-      alt="Repository size"
+      alt="Tamanho do Repositório"
       src="https://img.shields.io/github/repo-size/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/commits/master">
     <img
-      alt="GitHub last commit"
+      alt="Último Commit"
       src="https://img.shields.io/github/last-commit/Carecsnay/NLW-3?color=29B6D1"
     />
   </a>
 
   <a href="https://github.com/Carecsnay/NLW-3/blob/master/LICENSE">
     <img
-      alt="License"
+      alt="Licença"
       src="https://img.shields.io/github/license/Carecsnay/NLW-3?color=FFD666"
     />
   </a>
@@ -67,7 +67,6 @@ Os layouts da aplicação estão disponíveis no Figma: [Web](https://www.figma.
 
 ### Ambiente de desenvolvimento
 - [VS Code](https://code.visualstudio.com/)
-
 <br />
 
 ## 🤔 Como executar
