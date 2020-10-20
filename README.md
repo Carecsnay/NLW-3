@@ -167,11 +167,17 @@ Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Car
 <br />
 
 ## 📮 Entre em contato
-<p>
-**Gmail:**
-<a href="mailto:carecsnay1@gmail.com?subject=Olá,%20Bruno!%20">
-Mandar Email </ a>
-</ p>
+<html>
+  <body>
+    <p>
+      ✉:
+      <a href=
+   "mailto:carecsnay1@gmail.com?subject=Olá">
+   Mandar Email
+      </ a>
+    </ p>
+  </ body>
+</ html>
 
 <br />
 
